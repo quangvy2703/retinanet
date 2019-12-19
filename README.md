@@ -11,7 +11,7 @@ This repository is modified to train on custom data on COCO format. Before train
 python keras_retinanet/bin/inference.py
 ```
 ### COCO format
-COCO format(https://www.immersivelimit.com/tutorials/create-coco-annotations-from-scratch)
+[COCO format](https://www.immersivelimit.com/tutorials/create-coco-annotations-from-scratch)
 
 ## Installation
 
