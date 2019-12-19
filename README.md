@@ -3,6 +3,13 @@
 Keras implementation of RetinaNet object detection as described in [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
 by Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He and Piotr Dollár.
 
+### Information
+This repository is modified to train on custom data on COCO format. Before training, you must re-construct your data as COCO format.
+
+### Testing
+```
+python keras_retinanet/bin/inference.py
+```
 ## Installation
 
 1) Clone this repository.
@@ -234,13 +241,6 @@ Creating your own dataset does not always work out of the box. There is a [`debu
 
 Particularly helpful is the `--annotations` flag which displays your annotations on the images from your dataset. Annotations are colored in green when there are anchors available and colored in red when there are no anchors available. If an annotation doesn't have anchors available, it means it won't contribute to training. It is normal for a small amount of annotations to show up in red, but if most or all annotations are red there is cause for concern. The most common issues are that the annotations are too small or too oddly shaped (stretched out).
 
-## Results
 
-### MS COCO
 
-This repository is modified to train on custom data on COCO format. Before training, you must re-construct your data as COCO format.
 
-### Testing
-```
-python keras_retinanet/bin/inference.py
-```
